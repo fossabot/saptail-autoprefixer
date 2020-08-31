@@ -1,0 +1,24 @@
+/* Component styling */
+code {
+	font-family: menlo, inconsolata, monospace;
+	font-size: calc(1em - 2px);
+	color: #555;
+	background-color: #f0f0f0;
+	padding: 0.2em 0.4em;
+	border-radius: 2px;
+}
+.btn {
+  @apply font-bold;
+  @apply py-2;
+  @apply px-4;
+  @apply rounded;
+}
+.btn:hover {
+  @apply bg-blue-700;
+  transform: translateY(-1px);
+}
+@screen md {
+  .btn {
+    @apply inline-block;
+  }
+}

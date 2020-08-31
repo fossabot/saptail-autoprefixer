@@ -1,0 +1,9 @@
+/* Base styling */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-y: scroll;
+}
+

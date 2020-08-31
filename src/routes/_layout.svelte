@@ -1,5 +1,5 @@
 <script>
-	import Nav from "../components/Nav.svelte";
+	// import Nav from "../components/Nav.svelte";
 	import Stylesheet from "../components/Stylesheet.svelte";
 
 	export let segment;
@@ -8,17 +8,16 @@
 <style>
 	main {
 		position: relative;
-		max-width: 56em;
-		background-color: white;
-		padding: 2em;
 		margin: 0 auto;
-		box-sizing: border-box;
+		/* padding: var(--nav-h) var(--side-nav) 0 var(--side-nav); */
+		padding: var(--nav-h) 0 0 0;
+		overflow-x: hidden;
 	}
 </style>
 
 <Stylesheet />
 
-<Nav {segment} />
+<!-- <Nav {segment} /> -->
 
 <main>
 	<slot />
